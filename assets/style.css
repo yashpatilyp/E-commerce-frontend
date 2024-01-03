@@ -16,10 +16,9 @@ font-weight: 900;
   font-family:cursive;
   cursor: pointer;
 
- background-color: #361d32;
-  background-clip: text;
-  color: transparent;
-  background-size: cover;
+ color: #361d32;
+ 
+ 
   
 }
 
@@ -245,10 +244,7 @@ position: relative;
   letter-spacing: 2px;
   font-size: 40px;
   padding: 0px;
-  background-image: url("https://i.pinimg.com/564x/1b/e0/88/1be088c453e5df083ffbb82c4322927e.jpg");
-    background-clip: text;
-    color: transparent;
-    background-size: cover;
+ color: gold;
     font-family: Arial, Helvetica, sans-serif;
     font-variant: small-caps;
     margin: 0px;
