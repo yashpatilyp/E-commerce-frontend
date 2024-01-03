@@ -1,0 +1,32 @@
+.container{
+          background-color: antiquewhite;
+          width: 50%;
+         
+
+}
+.login-container{
+          margin-left: auto; 
+          margin-right: auto;
+          width: 50%;
+        
+}
+
+.contact-btn:hover{
+          letter-spacing: 5px;
+          background-color:#ed453c;
+       
+          transition: transform 0.3s ease-in-out, letter-spacing 0.3s ease-in-out;
+}
+
+@media (max-width: 770px) {
+ 
+          .login-container{
+                    
+                    width: 80%;
+                  
+          }
+          .container{
+                    width: 70%;
+
+          }
+        }

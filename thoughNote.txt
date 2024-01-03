@@ -1,0 +1,109 @@
+
+
+index.html : Include Bootstrap CSS link.
+             Add Bootstrap JS link and jQuery link.
+             Integrate external script using a script tag.
+             Link an external CSS stylesheet.
+             Create separate components for the navbar and footer using jQuery.
+             The use of jQuery's .load() function helps in dynamically loading the contents of separate HTML files for the navbar and footer components.
+
+  -> navbar.html:
+             nabar is taken from bootstrap and styled them in external stylesheet style.css.
+             Navigation bar with a brand link ("E Commerce"), a toggle button for smaller screens, a search form, and login button with a shopping cart icon.
+             Background color for the navbar is set to #edd2cb.
+             Styling for the logo (navbar-brand h2), including a cursive font, bold weight, and a gradient effect.
+             Styling for the search icon (input-box i).
+             Styling for the search input (input-box), including a white background, border radius, and box shadow.
+             Styling for the search input (input-box input), including transparent background and padding.
+             Styling for the login button (btn-login), including a red background color, white text, and box shadow.
+             Media queries for responsiveness on smaller screens.
+
+  ->subNavar.html:
+             a responsive and centered navigation bar using the Bootstrap classes justify-content-center and align-items-center.
+             Dropdowns for "Men" and "Women" are included with subcategories like "Shirts," "Pants," etc.
+             The data-bs-toggle attribute is used for dropdowns, indicating that Bootstrap is likely being utilized.
+             background-color: #f1e8e6;: Sets the background color of the navigation bar to a light beige color (#f1e8e6).
+             .nav-link Styling:
+             color: #543c52;: Sets the text color of the navigation links to a dark purple color (#543c52).
+
+
+  ->products.html:
+             Product Cards:
+
+             Each carousel item contains a <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4"> representing a grid of product cards.
+             Product cards are created using the <div class="col card-hide"> structure.
+             Product Information in Cards:
+
+             Each product card has an image (<img>), a title (<h5>), a description (<p>), and pricing information.
+             Pricing information includes the current price and the original price, along with available sizes.
+             Image Sources:
+
+             Images for the products are sourced from external URLs.
+             Price and Size Information:
+
+             The pricing information is displayed in Indian Rupees (₹) with both the current and original prices.
+             Size information is included for each product.
+             Navigation Controls:
+
+             The carousel has navigation controls (<button> elements) for moving to the previous or next slide.
+             Responsive Design:
+
+             The grid structure (row-cols-1, row-cols-md-2, row-cols-lg-4) ensures responsiveness for different screen sizes.
+             Additional Styling:
+
+             Some classes like card-hide and card-hide-sm suggest the possibility of additional styling for hiding cards based on screen size. 
+
+             Carousel Styling:
+
+             The .carousel class has a background color, padding, and margin.
+             Card Styling:
+
+             The .card class defines styling for the product cards, including box-shadow, border-radius, and margin.
+             Heading Styling:
+
+             The h1 heading inside the carousel has padding, centered text, a specific color, font family, and bold weight.
+             Image Styling:
+
+             Images inside the carousel have specified height, width, padding, and are centered within the carousel.
+             Image Hover Effect:
+
+             There's a hover effect on carousel images using the :hover pseudo-class, which includes a scaling transformation and a smooth transition effect.
+             Card Footer Styling:
+
+             The footer of each card includes styling for the cart icon (i element) and a crossed-out text effect for the original price (p element).
+             Media Queries:
+
+             There are two media queries:
+             The first one (@media (max-width: 990px)) hides elements with the class .card-hide when the screen width is 990 pixels or less.
+             The second one (@media (max-width: 750px)) hides elements with the class .card-hide-sm when the screen width is 750 pixels or less.
+
+   contact.html->
+             Form Styling:
+
+             .form-group: Adds a margin-bottom to form groups.
+             label: Sets a font weight of 600 for labels.
+             Image Hover Effect:
+
+             img:hover: Specifies a hover effect for images, including opacity change and rotation.
+             Contact Button Styling:
+
+             .contact-btn: Styles the submit button with a bold font, margin, padding, color, and background.
+             .contact-btn:hover: Specifies a different style for the button on hover, including letter-spacing and background color changes.
+             Contact Section Styling:
+
+             .contact: Styles the contact form section with margin, background color, padding, and border-radius.                    
+          
+login.html->
+             A container with a heading and a form for login.
+             The form contains input fields for email and password, and a submit button.
+
+             The checkLogin() function retrieves the entered email and password values.
+             It checks if the provided email and password match a predefined set of credentials (admin@admin.com and 123456).
+             If the credentials match, it shows an alert for successful login; otherwise, it shows an alert for incorrect email or password.
+
+             .container: Styles the main container with a background color and a specified width (50%).
+             .login-container: Styles the login container, centering it in the middle of the page with a specified width (50%).
+             .contact-btn:hover: Adds a hover effect to the login button, including changes in letter spacing and background color.
+             Media query (@media (max-width: 770px)) adjusts the width of the login container and main container for smaller screens.
+
+             The CSS includes a media query to adjust the container and login-container widths for screens with a maximum width of 770 pixels.
