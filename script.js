@@ -9,13 +9,23 @@ $(function () {
 
 
 
-        function checkLogin() {
-          var email = document.getElementById('exampleFormControlInput2').value;
-          var password = document.getElementById('exampleFormControlInput1').value;
-  
-          if (email === 'admin@admin.com' && password === '123456') {
-              alert('Login successful');
-          } else {
-              alert('Incorrect email or password');
-          }
-      }
+ 
+function checkLogin() {
+    // Get values from email and password input fields
+    var email = document.getElementById('exampleFormControlInput2').value;
+    var password = document.getElementById('exampleFormControlInput1').value;
+
+    // Check if email and password match a predefined admin login
+    if (email === 'admin@admin.com' && password === '123456') {
+        // Display a success message if login is successful
+        alert('Login successful');
+    } else {
+        // Display an error message if login fails
+        alert('Incorrect email or password');
+    }
+}
+
+
+
+
+      

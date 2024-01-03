@@ -1,27 +1,44 @@
-<nav class="navbar navbar-expand-lg " >
-          <div class="container-fluid">
-          
-            <a class="navbar-brand" href="#"><h3>E Commerce</h3></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        
-              <form class="d-flex ms-auto" role="search">
-                <div class="input-box">
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg">
+  <!-- Container for the navigation bar content -->
+  <div class="container-fluid">
+
+      <!-- Brand Logo -->
+      <a class="navbar-brand" href="#"><h3>E Commerce</h3></a>
+
+      <!-- Navbar Toggler for Mobile View -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Items -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- Search Form -->
+          <form class="d-flex ms-auto" role="search">
+              <div class="input-box">
+                  <!-- Search Icon -->
                   <i class="uil uil-search"></i>
+                  <!-- Search Input Field -->
                   <input type="text" placeholder="Search here..." />
+                  <!-- Magnifying Glass Icon -->
                   <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-              </form>
-        
-              <div class="ms-auto">
-                
-            <a href="/login.html">  <button class="   btn-login " type="submit">Login</button></a>  
-               <a href="/cart.html"> <i class="fa-solid fa-cart-shopping m-2 cart-icon"></i></a>
               </div>
+          </form>
+
+          <!-- Right-aligned Navbar Items -->
+          <div class="ms-auto">
+              <!-- Login Button -->
+              <a href="/login.html">
+                  <button class="btn-login" type="submit">Login</button>
+              </a>
               
-            </div>
+              <!-- Cart Icon -->
+              <a href="/cart.html">
+                  <i class="fa-solid fa-cart-shopping m-2 cart-icon"></i>
+              </a>
           </div>
-        </nav>
-        
+
+      </div>
+  </div>
+</nav>

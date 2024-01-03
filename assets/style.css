@@ -7,20 +7,16 @@ background-color: #edd2cb;
 }
 
 /* LOGO */
-.navbar-brand h3{
- 
- 
- 
-font-weight: 900;
-
-  font-family:cursive;
+.navbar-brand h3 {
+  font-weight: 900;
+  font-family: cursive;
   cursor: pointer;
+  color: #361d32;
 
- color: #361d32;
- 
- 
-  
 }
+
+
+
 
 
 .input-box {
@@ -221,64 +217,68 @@ font-weight: 900;
 
 
 /* Banner  */
-
-.quotation_div {
-position: relative;
-
+ /* Main container styling */
+ .quotation_div {
+  position: relative;
 }
+
+/* Background image styling */
 .quotation_div img {
-   width: 100%;
-   max-height: 750px;
-   
+  width: 100%;
+  max-height: 750px;
   background-size: contain;
 }
+
+/* Overlay container styling */
 .overlay {
-    z-index: 99;
-    width: 70%;
-    margin-left: 15%;
-    vertical-align: middle;
-    position: absolute;
-    top: 25%; /* Obvious problem, cause it's arbitrary */
+  z-index: 99;
+  width: 70%;
+  margin-left: 15%;
+  vertical-align: middle;
+  position: absolute;
+  top: 25%;
 }
-.overlay h1{
+
+/* Heading styling */
+.overlay h1 {
   letter-spacing: 2px;
   font-size: 40px;
-  padding: 0px;
- color: gold;
-    font-family: Arial, Helvetica, sans-serif;
-    font-variant: small-caps;
-    margin: 0px;
+  padding: 0;
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  margin: 0;
+  text-shadow: 0 0 5px rgb(246, 128, 85);
 }
+
+/* Paragraph styling */
 .quotation_div p {
   font-family: cursive;
-    text-align: center;
-    font-weight: 400;
-    font-size: 165%;
-
-    line-height: 2;
-    letter-spacing: 1px;
-  
-    color: #f1e8e6;
+  text-align: center;
+  font-weight: 400;
+  font-size: 165%;
+  line-height: 2;
+  letter-spacing: 1px;
+  animation: fadeInAndMove 1s ease-in-out forwards;
+  color: #f1e8e6;
 }
 
-
+/* Media query for smaller screens */
 @media only screen and (max-width: 1200px) {
   .quotation_div p {
-    
     font-size: 126%;
-    
+  }
 }
-}
+
+/* Media query for even smaller screens */
 @media only screen and (max-width: 527px) {
-  .overlay h1{
+  .overlay h1 {
     font-size: 20px;
-   
   }
   .quotation_div p {
-    
     font-size: 70%;
-    
-}}
+  }
+}
 
 /* product  */
 .carousel{
@@ -359,3 +359,4 @@ position: relative;
   text-transform: capitalize;
   margin: 0px;
 }
+

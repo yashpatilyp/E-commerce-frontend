@@ -50,21 +50,29 @@
 
           <div id="subNavbar"></div>
 
-          <div class="container mt-4 mb-4">
-                    <h1>LOGIN</h1>
-                    <form class=" login-container" onsubmit="checkLogin();" >
-                              
-                              <div class="form-group">
-                                  <label for="exampleFormControlInput2">Email address :</label>
-                                  <input type="email" class="form-control mt-2" id="exampleFormControlInput2" placeholder="name@example.com">
-                              </div>
-                              <div class="form-group">
-                                        <label for="exampleFormControlInput1">Password :</label>
-                                        <input type="password" class="form-control mt-2" id="exampleFormControlInput1" placeholder="Enter Password">
-                                    </div>
-                              <button type="submit" class="contact-btn  w-100 mb-5 mt-2">LOGIN</button>
-                          </form>
-          </div>
+         <!-- Container for the login form -->
+<div class="container mt-4 mb-4">
+  <!-- Login form title -->
+  <h1>LOGIN</h1>
+
+  <!-- Login form -->
+  <form class="login-container" onsubmit="checkLogin();">
+      <!-- Email input field -->
+      <div class="form-group">
+          <label for="exampleFormControlInput2">Email address :</label>
+          <input type="email" class="form-control mt-2" id="exampleFormControlInput2" placeholder="name@example.com">
+      </div>
+
+      <!-- Password input field -->
+      <div class="form-group">
+          <label for="exampleFormControlInput1">Password :</label>
+          <input type="password" class="form-control mt-2" id="exampleFormControlInput1" placeholder="Enter Password">
+      </div>
+
+      <!-- Login button -->
+      <button type="submit" class="contact-btn w-100 mb-5 mt-2">LOGIN</button>
+  </form>
+</div>
 
 
           <div id="footer"></div>

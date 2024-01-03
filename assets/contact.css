@@ -1,35 +1,42 @@
-.form-group {margin-bottom: 15px;}
+/* Adds margin to the bottom of form groups */
+.form-group {
+    margin-bottom: 15px;
+}
 
+/* Styles for labels within form groups */
 label {
-          font-weight: 600;
+    font-weight: 600;
 }
+
+/* Hover effect for images inside containers */
 .container img:hover {
-          opacity: 0.8;
-         
-          transform: scale(0.9);
-          transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-      }
-      
-        
-.contact-btn{
-          font-weight: bold;
-          margin-top: 1rem;
-          padding: 10px;
-          border: none;
-          background-color: #f55951;
-          cursor: pointer;
-         color: antiquewhite;
+    opacity: 0.8;
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
-.contact-btn:hover{
+
+/* Styling for contact buttons */
+.contact-btn {
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 10px;
+    border: none;
+    background-color: #f55951;
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+/* Hover effect for contact buttons */
+.contact-btn:hover {
     letter-spacing: 5px;
-    background-color:#ed453c;
- 
+    background-color: #ed453c;
     transition: transform 0.3s ease-in-out, letter-spacing 0.3s ease-in-out;
 }
 
-.contact{
-          margin-top: 20px;
-          background-color: antiquewhite;
-          padding: 0 40px;
-          border-radius: 10px;
+/* Styling for the contact form */
+.contact {
+    margin-top: 20px;
+    background-color: antiquewhite;
+    padding: 0 40px;
+    border-radius: 10px;
 }

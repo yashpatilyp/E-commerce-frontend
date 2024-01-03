@@ -1,32 +1,29 @@
-.container{
-          background-color: antiquewhite;
-          width: 50%;
-         
-
-}
-.login-container{
-          margin-left: auto; 
-          margin-right: auto;
-          width: 50%;
-        
+/* Styling for the main container */
+.container {
+  background-color: antiquewhite;
+  width: 50%;
 }
 
-.contact-btn:hover{
-          letter-spacing: 5px;
-          background-color:#ed453c;
-       
-          transition: transform 0.3s ease-in-out, letter-spacing 0.3s ease-in-out;
+/* Styling for the login container */
+.login-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
+/* Hover effect for contact buttons with additional styles on hover */
+.contact-btn:hover {
+  letter-spacing: 5px;
+  background-color: #ed453c;
+  transition: transform 0.3s ease-in-out, letter-spacing 0.3s ease-in-out;
+}
+
+/* Media query for responsiveness when the viewport is 770px or smaller */
 @media (max-width: 770px) {
- 
-          .login-container{
-                    
-                    width: 80%;
-                  
-          }
-          .container{
-                    width: 70%;
-
-          }
-        }
+  .login-container {
+      width: 80%;
+  }
+  .container {
+      width: 70%;
+  }
+}

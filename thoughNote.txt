@@ -7,6 +7,9 @@ index.html : Include Bootstrap CSS link.
              Create separate components for the navbar and footer using jQuery.
              The use of jQuery's .load() function helps in dynamically loading the contents of separate HTML files for the navbar and footer components.
 
+
+
+
   -> navbar.html:
              nabar is taken from bootstrap and styled them in external stylesheet style.css.
              Navigation bar with a brand link ("E Commerce"), a toggle button for smaller screens, a search form, and login button with a shopping cart icon.
@@ -18,6 +21,46 @@ index.html : Include Bootstrap CSS link.
              Styling for the login button (btn-login), including a red background color, white text, and box shadow.
              Media queries for responsiveness on smaller screens.
 
+
+
+  ->footer.html->
+             Represents the main container for the entire footer section.
+             Divided into multiple columns using the Bootstrap grid system for organized content.
+             Displays women's clothing categories with links such as dresses, pants, and skirts.
+             Displays men's clothing categories with links such as shirts, pants, and hoodies.
+             Kids' Section (<div class="col mb-3 text-center">):
+
+             Currently empty, potentially for displaying kids' clothing categories in the future.
+             Links Section (<div class="col mb-3 text-center">):
+
+             Provides general website navigation links like Home, Login, and Contact.
+              Footer Styling (.footer):
+              
+              Sets the background color of the footer to #361d32 (a dark purple).
+              Sets the text color to #edd2cb (a light cream color).
+              Navigation Link Styling (.nav-items a):
+
+              Sets the text color of navigation links within the footer to #edd2cb.
+              Horizontal Line Styling (.Hline):
+
+              Sets the text color to aliceblue.
+              Sets the width to 80% and centers it using margin auto.
+              Adds some padding and bottom margin for spacing.
+              Social Icons Styling (.social-icons a, .social-icons, .social-icons li):
+
+              Defines the appearance of social media icons.
+              Specifies a circular shape with a dark background color (#33353d) and light border color (#818a91).
+              Aligns them to the center and provides a transition effect on hover.
+              Individual Social Icons Styling (.social-icons a:active, .social-icons a:focus, .social-icons a:hover):
+
+              Changes the text color to #abd7d0 and the background color to #29aafe on interaction.
+              Social Icons Hover Styling (.social-icons a.facebook:hover, .social-icons a.twitter:hover, .social-icons a.instagram:hover):
+
+              Provides specific hover effects for Facebook, Twitter, and Instagram icons by changing their background colors.
+
+
+
+
   ->subNavar.html:
              a responsive and centered navigation bar using the Bootstrap classes justify-content-center and align-items-center.
              Dropdowns for "Men" and "Women" are included with subcategories like "Shirts," "Pants," etc.
@@ -25,6 +68,22 @@ index.html : Include Bootstrap CSS link.
              background-color: #f1e8e6;: Sets the background color of the navigation bar to a light beige color (#f1e8e6).
              .nav-link Styling:
              color: #543c52;: Sets the text color of the navigation links to a dark purple color (#543c52).
+
+
+
+
+  ->Banner.html:
+             The main container is defined with a class named quotation_div.
+             Inside this container, there's an img tag for the background image and a div with the class overlay containing the heading and paragraph for the quotation.
+  
+             The quotation_div is given a relative position.
+             The background image (img tag) is set to take up 100% of the width and a maximum height of 750px. The background-size is set to contain.
+             The overlay (div with class overlay) is absolutely positioned within the container, and its width is set to 70% with a margin to center it horizontally. It appears 25% from the top of the container.
+             The heading (h1) inside the overlay has a red color, uses a specific font, and has some additional stylings like letter spacing and text shadow.
+             The paragraph (p) inside the overlay has cursive font, centered text, and specific font size, weight, color, and spacing.
+             There are media queries to adjust the font size for the paragraph at different screen widths. For example, at a max-width of 1200px, the font size is adjusted, and for screens below 527px, both heading and paragraph font sizes are adjusted.
+  
+
 
 
   ->products.html:
@@ -77,6 +136,9 @@ index.html : Include Bootstrap CSS link.
              The first one (@media (max-width: 990px)) hides elements with the class .card-hide when the screen width is 990 pixels or less.
              The second one (@media (max-width: 750px)) hides elements with the class .card-hide-sm when the screen width is 750 pixels or less.
 
+
+
+
    contact.html->
              Form Styling:
 
@@ -93,6 +155,9 @@ index.html : Include Bootstrap CSS link.
 
              .contact: Styles the contact form section with margin, background color, padding, and border-radius.                    
           
+
+
+
 login.html->
              A container with a heading and a form for login.
              The form contains input fields for email and password, and a submit button.
@@ -107,3 +172,94 @@ login.html->
              Media query (@media (max-width: 770px)) adjusts the width of the login container and main container for smaller screens.
 
              The CSS includes a media query to adjust the container and login-container widths for screens with a maximum width of 770 pixels.
+
+
+
+
+
+cart.html->
+             Items in Cart Section (col-lg-8 cart):
+
+             Displays product image, details, pricing, and quantity control.
+             Delete button for removing items.
+             Order Summary Section (col-lg-4 summary):
+
+             Displays the total cost, shipping cost, and the overall total.
+             Checkout button for proceeding to the payment process.
+             General Styling (container, row_1):
+
+             Responsive design using flexbox for smaller screens.
+             Cart Section Styling (cart):
+
+             Background color and margin for visual appeal.
+             Formatting for product details, pricing, and quantity control.
+             Quantity Control Styling (counter-btn, cart i, cart input):
+
+             Styling for buttons and input for adjusting product quantity.
+             Delete Button Styling (noselect):
+
+             Red background with a white "Delete" text that shifts on hover.
+             Order Summary Styling (summary, summary-content):
+
+             Background color and margin for visual appeal.
+             Separation of cost, shipping, and total details.
+             Responsive Design (@media (max-width: 1200px)):
+
+             Adjusts the layout for smaller screens by changing the container's flex direction.
+             Checkout Button Styling (checkout-btn, check):
+
+             Yellow background color with black text for the checkout button.
+
+
+
+
+     -> allProduct.html:     
+             Div with the ID "header" (possibly for the navbar).
+             Div with the ID "subNavbar" (possibly for sub-navigation or links).
+             Three main sections for Men's, Women's, and Kids' products, each with a heading (<h4>) and a list of product cards (<ul> and <li>).
+             Product Cards:
+
+             Each product card consists of an image, title, description, and pricing information.
+             The pricing information includes the original price and discounted price, along with the available sizes.
+             The product cards use Font Awesome icons, such as the shopping cart icon.
+             Footer Section:
+
+             Div with the ID "footer" (possibly for the footer content).
+             External Image Sources:
+
+             I used external image sources for the product images.    
+
+             I import the Quicksand font from Google Fonts for use in your project.
+             Design Resets:
+
+             The box-sizing: border-box; rule is applied to ensure consistent box models throughout the document.
+             Main Section:
+
+             The .main class sets the maximum width, margin, padding, and background color for the main content area.
+             The h4 elements inside the .main class have specific styling for font size, text alignment, border, padding, font weight, and border radius.
+             Headings:
+
+             Specific styling for h1 headings, including padding, text alignment, color, font family, and font weight.
+             Images:
+
+             General styling for images, setting a maximum height, and ensuring they are responsive.
+             Image Hover Effect:
+
+             An image hover effect is defined using the :hover pseudo-class, which includes a scale transformation and a smooth transition effect.
+             Card Layout:
+
+             Styles for card layouts, defining flex properties, and adjusting the layout based on different screen sizes using media queries.
+             The .card class defines the appearance of individual cards, including background color, border radius, box-shadow, and a flex container.
+             Card Content:
+
+             Styles for the content within each card, including padding and background color.
+             Card Title and Text:
+
+             Specific styling for card titles and text, including color, font size, font weight, and letter spacing.
+             Made By:
+
+             Styling for a "Made By" section, setting the font weight, font size, margin, and text alignment.
+
+
+             same style is applied on
+   womenAll_Product.html, skirts-women.html,shirt-mens.html,pants-women.html,pants-mens.html,menAll_Product.html,hoodies-men.html,dresses-women.html,dresses-mens.html
